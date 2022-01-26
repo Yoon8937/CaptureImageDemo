@@ -7,7 +7,7 @@ android {
 
     defaultConfig {
         applicationId "com.example.captureimagedemo"
-        minSdk 18 //버전
+        minSdk 18 //버전 설정
         targetSdk 32
         versionCode 1
         versionName "1.0"
@@ -35,4 +35,12 @@ dependencies {
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+
+    // Gson 변환기 라이브러리.  Gson Converter - JSON 타입의 응답결과를 객체로 매핑(변환)해주는 Converter
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+
+    // Scalars 변환기 라이브러리.  Scalars Converter - 응답결과를 String자체로 받아서 보여주는 Converter (사용자가 직접 변환시 사용)
+    implementation 'com.squareup.retrofit2:converter-scalars:2.9.0'
 }
